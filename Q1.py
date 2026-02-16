@@ -1,4 +1,12 @@
-a = int(input("Enter a number: "))  
+a = 23
+b = 12
+c = 294
 
-for i in range(1 , 21):
-    print(f"{a} X {i} = {a * i}")
+def greatest(a, b, c):
+    if(a>b and a>c):
+        return a
+    elif(b>a and b>c):
+        return b
+    else:
+        return c
+print(greatest(a, b, c))

@@ -1,5 +1,5 @@
-l = ["Keshav", "Sujit", "Sara", "Shiv", "Harikesh"]
+def c_to_f(c):
+    return 9*(c)/5+ 32
 
-for name in l:
-    if(name . startswith("S")):
-        print(f"Hello {name}")
+c = int(input("Enter tem in C: "))
+print(c_to_f(c))
