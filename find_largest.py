@@ -1,24 +1,9 @@
-A = int(input("Enter first num: "))
-B = int(input("Enter second num: "))
-C = int(input("Enter third num: "))
+"# ternary operator"
 
-if( A > B and A > C):
-    print("A is Grater")
+A = int(input("Enter your first number: "))
+B = int(input("Enter your second number: "))
+C = int(input("Enter your thired number: "))
 
-elif(B > A and B > C):
-    print("B is Grater")
+largest = A if (A > B and A > C) else B if (B > C) else C
 
-elif(C > A and B < C):
-    print("C is Grater")
-
-elif( A == B and A == C):
-    print("all are equal")
-
-elif( A == B ):
-    print("A is equal to B")
-
-elif( A == C):
-    print(" A is equal to C")
-
-elif( B == C):
-    print(" B is equal to C")
+print("Largest number is:", largest)
