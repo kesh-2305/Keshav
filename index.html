@@ -1,9 +1,70 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Car Project</title>
-</head>
-<body>
-    <h1>Welcome to Car Selling System</h1>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Haryana GK Web Quiz</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Haryana GK Web Quiz</h1>
+      <p class="subtitle">Learn and test your Haryana knowledge in a simple web app.</p>
+
+      <section class="panel">
+        <h2>Select Category</h2>
+        <div id="categoryButtons" class="button-group"></div>
+      </section>
+
+      <section class="panel">
+        <h2>Select Mode</h2>
+        <div class="button-group">
+          <button class="mode-btn active" data-mode="quiz">Quiz Mode</button>
+          <button class="mode-btn" data-mode="practice">Practice Mode</button>
+          <button id="dailyQuizBtn">Daily Quiz</button>
+        </div>
+      </section>
+
+      <div class="controls">
+        <button id="startBtn">Start</button>
+        <button id="restartBtn" class="secondary">Restart</button>
+      </div>
+
+      <section class="stats panel">
+        <div>Score: <span id="scoreValue">0</span></div>
+        <div>Progress: <span id="progressValue">0/0</span></div>
+        <div>Correct: <span id="correctValue">0</span></div>
+        <div>Wrong: <span id="wrongValue">0</span></div>
+      </section>
+
+      <section id="questionCard" class="panel hidden">
+        <h3 id="questionText"></h3>
+        <div id="optionsContainer"></div>
+        <div class="actions">
+          <button id="submitBtn">Submit</button>
+          <button id="nextBtn" class="secondary hidden">Next</button>
+          <button id="bookmarkBtn" class="secondary">Bookmark</button>
+        </div>
+        <p id="feedback" class="feedback"></p>
+      </section>
+
+      <section id="resultCard" class="panel hidden">
+        <h3>Quiz Finished</h3>
+        <p id="resultText"></p>
+        <p id="accuracyText"></p>
+      </section>
+
+      <section class="panel">
+        <h2>Bookmarked Questions</h2>
+        <ul id="bookmarkList"></ul>
+      </section>
+
+      <section class="panel">
+        <h2>Leaderboard</h2>
+        <ol id="leaderboardList"></ol>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
